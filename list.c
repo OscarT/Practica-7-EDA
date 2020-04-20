@@ -145,14 +145,14 @@ int search_data(list *l, DATA data){
 DATA search_pos(list *l, int pos){
     node *t;
     int i;
-    for(i=1, t = l->head; i==pos; i++,t= t->next); 
+    for(i=1, t = l->head; i<pos; i++,t= t->next); 
     if(t!=NULL) return t->data;
     return -1;
 }
 node *serch_node(list *l, DATA data){
     node *t = create_node();
     int i;
-    for(i=1, t = l->head; i==data; i++,t= t->next); 
+    for(i=1, t = l->head; i<data; i++,t= t->next); 
     if(t!=NULL) return t->data;
     return -1;
 }
