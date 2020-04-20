@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-node *crete_node(DATA data){
+node *create_node(DATA data){
     node *t;
     t = (node*)malloc(sizeof(node));
     t->next = NULL;
