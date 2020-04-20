@@ -194,7 +194,7 @@ node *anterior(list *l, int pos){
 void print_list(list *l){
     node *t = l->head;
     while(t!= NULL){
-        print("Dato: %i\n", t->data);
+        printf("Dato: %i\n", t->data);
         t = t->next;
     }
 }
