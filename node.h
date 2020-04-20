@@ -10,7 +10,7 @@ struct _node{
     node *next;
 };
 
-node *crete_node(DATA data);
+node *create_node(DATA data);
 void delete_node(node *n);
 
 #endif
